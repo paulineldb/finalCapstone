@@ -20,4 +20,10 @@ The website contains 4 pages:
 * contact form
 
 
+### Screenshots
+Homepage:
+![homepage screenshot](/the-onyx-isle-capture1.PNG)
+Player characters page:
+![player characters page screenshot](/the-onyx-isle-capture2.PNG)
+
 > Credits: all creative content present on the website has been created by our DM, Benjamin Thornton (contact details available if you have any questions!)
