@@ -1,0 +1,342 @@
+/* ------ importing fonts to be used on the website ------*/
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:ital@0;1&display=swap');
+/* ------ End of fonts------ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+ /* ------ BODY ------ */
+body {
+    position: relative;
+    margin-top: 100px;
+    background-color: rgba(255, 252, 242, 0.5);
+}
+
+body a {
+    color: rgba(211, 196, 227, 1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body a:hover {
+    text-shadow: 0 0 0.2em rgba(40, 39, 41, 0.4);
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* ------ HEADER: navigation bar ------ */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(123, 136, 111, 1);
+    z-index: 1;
+    box-shadow: 0 0 10px 0 rgba(40, 39, 41, 0.7);
+} 
+
+.container_navbar {
+    float: none;
+    width: 1280px;
+    margin: auto;
+}
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.campaign_name {
+    font-size: 2rem;
+    font-family: 'Quintessential', cursive;
+}
+
+.nav_link {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ------ MAIN + BUTTONS ------*/
+main {
+    max-width: 1280px;
+    margin: auto;
+    padding: 1.8vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.save-btn, .likeBtn, #submit {
+    width: 100px;
+    background-color: rgba(123, 136, 111, 1);
+    color: rgba(40, 39, 41, 1);
+    border: 1px solid rgba(40, 39, 41, 0.7);
+    border-radius: 5px;
+    display: block;
+    font-variant: small-caps;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: -0.5rem auto auto auto;
+}
+
+.save-btn:hover, .likeBtn:hover, #submit:hover {
+    background-color: rgba(40, 39, 41, 0.7);
+    box-shadow: 0px 2px 10px 2px rgba(40, 39, 41, 0.3);
+    clear: both;
+}
+
+#joy-save-btn, #betty-save-btn, #usra-save-btn, #glaedr-save-btn, #takhan-save-btn {
+    position: relative;
+    right: 55px;
+}
+
+#joy-likeBtn, #betty-likeBtn, #usra-likeBtn, #glaedr-likeBtn, #takhan-likeBtn {
+    position: relative;
+    bottom: 9px;
+    left: 55px;
+}
+
+/* ------ TITLE ------*/
+.title_block {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#home_title {
+    font-family: 'Quintessential', cursive;
+    font-size: 3.5rem;
+    color: rgba(33, 1, 36, 1);
+}
+
+h2 {
+    color: rgba(88, 80, 74, 1);
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 90%;
+}
+
+
+/* ------ CHARACTER SHEET ------*/
+/* ------ BANNER: PICTURE + SIDE TEXT ------ */
+/* ------ purple version ------ */
+.intro_char {
+    background-color: rgba(211, 196, 227, 0.6);
+    max-width: 450px;
+    padding: 2rem;
+    margin: 1rem auto 0 auto;
+    gap: 10%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.intro_char a {
+    color: rgba(88, 80, 74, 1);
+}
+/* ------ grey version ------ */
+.intro_char_2 {
+    background-color: rgba(88, 80, 74, 0.6);
+    max-width: 450px;
+    padding: 2rem;
+    margin: 1rem auto 0 auto;
+    gap: 10%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.img_char {
+    max-width: 100px;
+    border-radius: 100px;
+    object-fit: contain;        
+    object-position: 50% 50%;
+    box-shadow: 0 0 5px 0;
+}
+
+.intro_text {
+    max-width: 250px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.intro_text p {
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 20%;
+}
+
+.intro_text h3 {
+    padding-top: 0.6rem;
+    font-size: 1.7rem;
+    padding-bottom: 0px;
+    font-weight: 700;
+    font-style: normal;
+    color: inherit;
+    margin-bottom: auto;
+}
+
+h6 {
+    font-size: 1.2rem;
+    line-height: 20%;
+}
+
+/* ------ INFO - STAT ------ */
+/* ------ purple version ------ */
+.info_stat {
+    max-width: 446px;
+    border-style: none solid solid solid;
+    border-color: rgba(211, 196, 227, 0.6);
+    background-color: rgba(255, 252, 242, 0.5);
+    border-width: 2px;
+    margin: 0 auto 1rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+/* ------ grey version ------ */
+.info_stat_2 {
+    max-width: 446px;
+    border-style: none solid solid solid;
+    border-color: rgba(88, 80, 74, 0.6);
+    background-color: rgba(255, 252, 242, 0.5);
+    border-width: 2px;
+    margin: 0 auto 1rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+/*------- INFO ------ */
+.info_block {
+    border-style: none solid none none;
+    border-color: rgba(40, 39, 41, 0.7);
+    border-width: 1px;
+    padding-right: 1rem;
+}
+
+.block_name {
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    color: rgba(211, 196, 227, 1);
+    line-height: 150%;
+}
+
+.block_name_2 {
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    color: rgba(88, 80, 74, 1);
+    line-height: 150%;
+}
+
+.info_line {
+    display: flex;
+    justify-content: space-between
+}
+
+/* ------ STATS ------ */
+.stat_line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_block h5, .stat_block h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    margin-bottom: auto;
+}
+
+.info_line p, .stat_line p {
+    font-size: 1rem;
+    text-align: right;
+}
+
+/* ------ FAVORITE CHARACTER FORM ------ */
+.fav {
+    margin: 2rem auto auto auto;
+    max-width: max-content;
+}
+
+.fav p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 0.4rem;
+}
+
+.fav #submit {
+    background-color: rgba(123, 136, 111, 1);
+    border-radius: 5px;
+    padding: 0.1rem;
+    margin-top: 0.6rem;
+}
+
+/* ------ FOOTER: DnD BEYOND SECTION ------ */
+.dndbeyond {
+    max-width: 280px;
+    min-height: 80px;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background-color: rgba(123, 136, 111, 1);
+    border-radius: 5px;
+}
+
+#dndbeyond_logo {
+    max-width: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0;
+}
+
+.dndbeyond p {
+    max-width: 70%;
+    text-align: justify;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* ------ Breakpoint: screens under 1280px ------ */
+
+@media (max-width:1280px) {
+    .container_navbar {
+        width: 100%;
+    }
+
+    .nav_menu {
+        gap: 20px;
+    
+    }
+}

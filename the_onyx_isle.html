@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href = "CSS/the_onyx_isle.css" rel = "stylesheet" type = "text/css">
+        <title>The Onyx Isle - World</title>
+    </head>
+
+
+    <body>
+        <!-- HEADER: navbar-->
+        <header>
+            <div class="container_navbar">
+                <nav class="navbar">
+                    <a href="index.html" class="campaign_name">The Onyx Isle</a>
+                    <ul class="nav_menu">
+                        <li class="nav_link"><a href="index.html">Home</a></li>
+                        <li class="nav_link"><a href="the_onyx_isle.html">World</a></li>
+                        <li class="nav_link"><a href="characters.html" >Characters</a></li>
+                        <li class="nav_link"><a href="save-for-later.html">Saved items</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- MAIN: title block + world lore and images -->
+        <main>
+            <div class="title_block">
+                <h1 id="home_title">The Onyx Isle</h1>
+                <h2>A Dungeons and Dragons adventure.</h2>
+            </div>
+            
+            <!-- WORLD SECTION: world map + lore -->
+            <h4>The world</h4>
+            <div class="world_section">
+                <div class="map_box">
+                    <h3>Map of the Onyx Isle</h3>
+                    <img class="world_map_img" src="images/world_map.jpg" alt="a map of the Onyx Isle">
+                    <p>Click <a href="images/world_map.jpg" target="_blank">here</a> to open the full-size map.</p>
+                </div>
+                <div class="lore_box">
+                    <h3>World lore</h3>
+                    <p>The Onyx Isle can currently be found in a demiplane-like prison. It is ruled over by 6 gods (also known as Custodians) who are similar to well... prison wardens! They are not true gods but divine beings chosen by the Gods of their namesakes (Wealth, Death, Nature, Justice, Land and Knowledge).</p>
+                    <p>The Isle was originally part of a larger world, from which it was broken from and trapped in a demiplane after a threat presented itself to the world and failed to be killed. There exist additional islands outside the purview of the "Gods".</p>
+                    
+                    <!-- GODS OVERVIEW/TABLE-->
+                    <h3>Overview of the gods</h3>
+                    <table id="gods_table">
+                        <tr>
+                            <th>God/Goddess</th>
+                            <th>Name</th>
+                            <th>Race</th>
+                            <th>Class</th>
+                            <th>Other</th>
+                        </tr>
+                        <tr>
+                            <td>Goddess of Death</td>
+                            <td>Karzee Asu</td>
+                            <td>Changeling</td>
+                            <td>Cleric</td>
+                            <td>Prophet of Death</td>
+                        </tr>
+                        <tr>
+                            <td>God of Magic</td>
+                            <td>Helia</td>
+                            <td>Halfling</td>
+                            <td>Wizard</td>
+                            <td>Prophet of the god of Magic, Brother of Hunraesa</td>
+                        </tr>
+                        <tr>
+                            <td>Goddess of Health and Disease</td>
+                            <td>Hunraesa</td>
+                            <td>Halfling</td>
+                            <td><i>unknown</i></td>
+                            <td>Prophet of the God of Growth, Sister of Helia</td>
+                        </tr>
+                        <tr>
+                            <td>Goddess of Wealth and Family</td>
+                            <td>Mortoth</td>
+                            <td>Gnome</td>
+                            <td><i>unknown</i></td>
+                            <td>Prophet of the God of Protection</td>
+                        </tr>
+                        <tr>
+                            <td>God of Justice</td>
+                            <td>Gytra</td>
+                            <td>Half-Elf</td>
+                            <td><i>unknown</i></td>
+                            <td>Prophet of the God of Law and Order</td>
+                        </tr>
+                        <tr>
+                            <td>God of Physical Labor</td>
+                            <td>Halivar</td>
+                            <td>Leonin</td>
+                            <td><i>unknown</i></td>
+                            <td>Prophet of the God of Balance</td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="save-btn" id="lore-btn">save for later</button>
+                <button class="likeBtn not-liked" id="lore-likeBtn">like</button>
+            </div>
+
+            <!-- GODS AND REGIONS: THE DETAILS-->
+            <h4>Gods and Regions: the details</h4>
+            <div class="details_section">
+                <div class="regions_list_box">
+                    <h5><i>Click on a region from the list below to learn more:</i></h5>
+                    <ol class="regions_list">
+                        <li class="regions_entry"><a href="#Helia">Helia</a></li>
+                        <li class="regions_entry"><a href="#Halivar">Halivar</a></li>
+                        <li class="regions_entry"><a href="#Hunraesa">Hunraesa</a></li>
+                        <li class="regions_entry"><a href="#Gytra">Gytra</a></li>
+                        <li class="regions_entry"><a href="#Mortoth">Mortoth</a></li>
+                    </ol>
+                </div>
+                
+                <!-- REGION: HELIA -->
+                <div>
+                    <div class="region" id="Helia">
+                        <div class="region_map">
+                            <img class="region_map_img" src="images/Helia.jpeg" alt="A color map of the region of Helia.">
+                        </div>
+                        <div class="region_infos">
+                            <h3>Helia</h3>
+                            <p><u>Capital of the region:</u> Viden</p>
+                            <p>Helia is the twin brother to Hunraesa. He is studious and obsessed with the notion of advancing society, often to the detriment of his sister and himself as well.</p>
+                            <p>When looking for students or prodigies, he is drawn to the ones that seek knowledge and self-betterment. Once a powerful Wizard, he chose to share what he knew (contrary to most of the other Wizards who hoard their knowledge), making him equally well-liked and hated amongst the magic community.</p>
+                            <p>Many wizards who are brave enough to seek out magical knowledge have twisted his philosophy on sharing magic and knowledge to hoard it and keep it secret for themselves or use their knowledge to find other mages and report them to steal their secrets.
+                            </p>
+                            <p><u>Depiction:</u> Helia is depicted as a very old, serious Halfling man, most people's stereotypical vision of what a Wizard is (imagine a Hobbit-sized Gandalf).</p>
+                            <br>
+                            <p><i>Click <a href="images/Helia.jpeg" target="_blank">here</a> to open the full-size map.</i></p>
+                        </div>
+                    </div>
+                    <button class="save-btn" id="helia-btn">save for later</button>
+                    <button class="likeBtn not-liked" id="helia-likeBtn">like</button>
+                </div>
+
+                <!-- REGION: HALIVAR-->
+                <div>
+                    <div class="region" id="Halivar">
+                        <div class="region_map">
+                            <img class="region_map_img" src="images/Halivar.jpeg" alt="A color map of the region of Halivar.">
+                        </div>
+                        <div class="region_infos">
+                            <h3>Halivar</h3>
+                            <p><u>Capital of the region:</u> Mereton</p>
+                            <p>The region of Halivar is a monarchy, the throne of which is currently occupied by a king.</p>
+                            <p>To this day, very littel is known about the custodian of the region. Halivar is known as the God of Physical Labor and is the prophet of the God of Balance.</p>
+                            <p><u>Depiction:</u> He is believed to take the form of a Leonin (a lion-like bipedal being).</p>
+                            <br>
+                            <p><i>Click <a href="images/Halivar.jpeg" target="_blank">here</a> to open the full-size map.</i></p>
+                        </div>
+                    </div>
+                    <button class="save-btn" id="halivar-btn">save for later</button>
+                    <button class="likeBtn not-liked" id="halivar-likeBtn">like</button>
+                </div>
+
+                <!-- REGION: HUNRAESA-->
+                <div>
+                    <div class="region" id="Hunraesa">
+                        <div class="region_map">
+                            <img class="region_map_img" src="images/Hunraesa.jpeg" alt="A color map of the region of Hunraesa.">
+                        </div>
+                        <div class="region_infos">
+                            <h3>Hunraesa</h3>
+                            <p><u>Capital of the region:</u> Naefell</p>
+                            <p>The region is a Democracy, lead by a Council found in the capital city.</p>
+                            <p>Hunraesa is the twin sister to Helia, whose genius she worships. She loves him for his kind nature and gifting attitude. </p>
+                            <p>She is a naturally gifted healer and excellent businesswoman who would fund her brother's research.</p>
+                            <p>Her duty lays in maintaining health and keeping disease and pestilence at bay, which is why she is also seen as the Goddess of Disease and Decay. However, many still pray to her for deliverance from diseases or for protection from creatures that lurk in the darkness.</p>
+                            <p><u>Depiction:</u> She is depicted as a simple, kind, old woman. However, depictions of her as a hag can also be found.</p>
+                            <br>
+                            <p><i>Click <a href="images/Hunraesa.jpeg" target="_blank">here</a> to open the full-size map.</i></p>
+                        </div>
+                    </div>
+                    <button class="save-btn" id="hunraesa-btn">save for later</button>
+                    <button class="likeBtn not-liked" id="hunraesa-likeBtn">like</button>
+                </div>
+
+                <!-- REGION: GYTRA-->
+                <div>
+                    <div class="region" id="Gytra">
+                        <div class="region_map">
+                            <img class="region_map_img" src="images/Gytra.jpeg" alt="A color map of the region of Gytra.">
+                        </div>
+                        <div class="region_infos">
+                            <h3>Gytra</h3>
+                            <p><u>Capital of the region:</u> Haagden</p>
+                            <p>Gytra is a noble in the realm who was praised by the Lords and common folk alike for the reforms he proposed. He was chosen to judge those who died, working alongside Karzee. Due to his nature, he has a black and white sense of right and wrong which often causes disputes between himself and Karzee as she is far for forgiving.</p>
+                            <p>He was allowed to keep his powers if he enforced the new laws set out by the new overlords. However, his duties changed from that of Law and Justice to Vengeance and Balancing.</p>
+                            <p>He attempts to uphold the vow he made as close as possible within the confines of his new “prison”.</p>
+                            <p><u>Depiction:</u> A high elf noble with androgynous features, long blonde hair, athletic build, dressed in regal clothing fitting a deity of his station, a reminder that he was once one of the mortals.</p>
+                            <br>
+                            <p><i>Click <a href="images/Gytra.jpeg" target="_blank">here</a> to open the full-size map.</i></p>
+                        </div>
+                    </div>
+                    <button class="save-btn" id="gytra-btn">save for later</button>
+                    <button class="likeBtn not-liked" id="gytra-likeBtn">like</button>
+                </div>
+
+                <!-- REGION: MORTOTH-->
+                <div>
+                    <div class="region" id="Mortoth">
+                        <div class="region_map">
+                            <img class="region_map_img" src="images/Mortoth_Map.jpeg" alt="A color map of the region of Mortoth.">
+                        </div>
+                        <div class="region_infos">
+                            <h3>Mortoth</h3>
+                            <p><u>Capital of the region:</u> Torrenti</p>
+                            <p>Mortoth is known for being extremely selfish and devoted to her family. She was the eldest child of two mothers, adopted at the age of 5, her younger siblings were other children her parents took in. She always felt that she owed her parents back and that she needed to prove herself. She became obsessed with bettering herself and her family’s station.</p>
+                            <p>Mortoth was raised to protect families, to be a force in stopping evil entering their homes.</p>
+                            <p>Many people prayed to her each night so that they would be protected from things that linger.</p>
+                            <p>Many thieves’ guilds also have sects dedicated to her and their pursuit of wealth.</p>
+                            <p><u>Depiction:</u> Mortoth was described as a beautiful Gnome with long dark brown hair said to stop those who wish to do harm.</p>
+                            <br>
+                            <p><i>Click <a href="images/Mortoth_Map.jpeg" target="_blank">here</a> to open the full-size map.</i></p>
+                        </div>
+                    </div>
+                    <button class="save-btn" id="mortoth-btn">save for later</button>
+                    <button class="likeBtn not-liked" id="mortoth-likeBtn">like</button>
+                </div>
+            </div>
+
+            <!-- NPC NAME FORM -->
+            <div class="npc_name_form">
+                <p>Want to help Ben come up with inspired NPC (non-player character) names? Submit your ideas below!</p>
+                <p>(Please... I beg you... We can't have another Bob, Luke or Jenny)</p>
+                <form action="#">
+                    <input type="text" placeholder="your inspired idea here" />
+                    <button id="submit-form-btn">Submit</button>
+                </form>
+            </div>
+
+        </main>
+
+        <!-- FOOTER: DnD beyond info and link-->
+        <footer>
+            <section class="dndbeyond">
+                <img id="dndbeyond_logo" src="images/DnDBeyondLogo.jpeg" alt="The logo of the Dnd Beyond website">
+
+                <p>To learn more about Dungeons and Dragons and how <i>you</i> can play, visit the official website: <a href="https://www.dndbeyond.com/" target="_blank">https://www.dndbeyond.com/</a> </p>
+            </section>
+        </footer>
+
+
+        <!-- LINKING JS FILE -->
+        <script src="./Script/D&D-website-script.js"></script>
+    </body>
+    
+</html> 

@@ -1,0 +1,445 @@
+/* ------ importing fonts to be used on the website ------*/
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:ital@0;1&display=swap');
+/* ------ End of fonts------ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+ /* ------ BODY ------ */
+body {
+    position: relative;
+    margin-top: 100px;
+    background-color: rgba(255, 252, 242, 0.5);
+}
+
+body a {
+    color: rgba(211, 196, 227, 1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body a:hover {
+    text-shadow: 0 0 5px 0;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* ------ HEADER: navigation bar ------ */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(123, 136, 111, 1);
+    z-index: 1;
+    box-shadow: 0 0 10px 0 rgba(40, 39, 41, 0.7);
+} 
+
+.container_navbar {
+    float: none;
+    width: 1280px;
+    margin: auto;
+}
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.campaign_name {
+    font-size: 2rem;
+    font-family: 'Quintessential', cursive;
+}
+
+.nav_link {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ------ MAIN ------*/
+main {
+    max-width: 1280px;
+    margin: auto;
+    padding: 1.8vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgba(88, 80, 74, 1);
+    font-style: italic;
+    margin-bottom: -10px;
+}
+
+.save-btn, .likeBtn, .npc_name_form button {
+    width: 100px;
+    height: 18px;
+    background-color: rgba(123, 136, 111, 1);
+    color: rgba(40, 39, 41, 1);
+    border: 1px solid rgba(40, 39, 41, 0.7);
+    border-radius: 5px;
+    display: block;
+    font-variant: small-caps;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.save-btn:hover, .likeBtn:hover, .npc_name_form button:hover {
+    background: rgba(40, 39, 41, 0.7);
+    box-shadow:0px 2px 10px 2px rgba(40, 39, 41, 0.3);
+    clear: both;
+}
+
+/* ------ TITLE ------*/
+.title_block {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#home_title {
+    font-family: 'Quintessential', cursive;
+    font-size: 3.5rem;
+    color: rgba(33, 1, 36, 1);
+}
+
+h2 {
+    color: rgba(88, 80, 74, 1);
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 90%;
+}
+
+/* ------ WORLD SECTION: world map + lore ------ */
+h4{
+    font-size: 1.6rem;
+    text-align: center;
+    color: rgba(255, 252, 242, 1);
+    font-family: 'Quintessential', cursive;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    background-color: rgba(88, 80, 74, 1);
+    border-radius: 50px;
+    margin-top: 2rem;
+    line-height: normal;
+}
+
+.world_section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* ------ WORLD MAP ------ */
+.map_box {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.map_box p {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: rgba(88, 80, 74, 1);
+}
+
+.world_map_img {
+    max-width: 95%;
+    filter: grayscale(100%);
+    border-radius: 5px;
+    margin: auto auto 0.5rem auto;
+    object-fit: contain;        
+    object-position: 50% 50%;
+}
+
+.world_map_img:hover {
+    filter: none;
+    box-shadow: 0 0 10px 0;
+}
+
+/* ------ WORLD LORE BOX ------ */
+.lore_box {
+    max-width: 40%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    background-color: rgba(211, 196, 227, 0.8);
+    border-radius: 5px;
+}
+
+.lore_box p {
+    font-size: 0.9rem;
+}
+
+#lore-btn {
+    margin-top: 0.5rem;
+    position: relative;
+    left: 135px;
+}
+
+#lore-likeBtn {
+    margin-top: 0.5rem;
+    position: relative;
+    left: 80px;
+}
+
+
+/* ------ GODS TABLE ------*/
+#gods_table, th, td {
+    border: 1px solid rgba(40, 39, 41, 0.7);
+    border-collapse: collapse;
+}
+
+#gods_table th {
+    text-align: left;
+    font-size: 0.9rem;
+    background-color: rgba(88, 80, 74, 0.3);
+}
+
+#gods_table th, td {
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+
+/* ------ GODS AND REGIONS: THE DETAILS ------ */
+.details_section {
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 5% 7% 5% 7%;
+}
+
+.regions_list_box {
+    padding-bottom: 4rem;
+    margin: auto;
+}
+
+.regions_list_box a {
+    color: rgba(33, 1, 36, 0.5);
+}
+
+h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.regions_list {
+    list-style-type: none;
+    text-align: center; 
+}
+
+.regions_entry {
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.region {
+    display: flex;
+    flex-flow: row;
+    gap: 5%;
+    margin-bottom: 2rem;
+    height: fit-content;
+}
+
+.region_map {
+    max-width: 30%;
+    margin: auto;
+}
+
+.region_map_img {
+    max-width: 100%;
+    filter: grayscale(100%);
+    border-radius: 5px;
+    margin: auto auto 0.5rem auto;
+}
+
+.region_map_img:hover {
+    filter: none;
+    box-shadow: 0 0 10px 0;
+}
+
+.region_infos {
+    display: flex;
+    flex-flow: column;
+    height: fit-content;
+    gap: 5%;
+    border-bottom: solid;
+    border-bottom-style: dashed;
+    border-color: rgba(123, 136, 111, 1);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.region_infos h3 {
+    color: rgba(123, 136, 111, 1);
+    font-size: 1.5rem;
+    border-bottom: solid;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.region_infos p {
+    padding-top: 0.5rem;
+}
+
+#helia-btn {
+    position: relative;
+    bottom: 100px;
+}
+
+#helia-likeBtn {
+    position: relative;
+    bottom: 118px;
+    left: 110px;
+}
+
+#halivar-btn {
+    position: relative;
+    bottom: 35px;
+}
+
+#halivar-likeBtn {
+    position: relative;
+    bottom: 53px;
+    left: 110px
+}
+
+#hunraesa-btn {
+    position: relative;
+    bottom: 90px;
+}
+
+#hunraesa-likeBtn {
+    position: relative;
+    bottom: 108px;
+    left: 110px
+}
+
+#gytra-btn {
+    position: relative;
+    bottom: 85px;
+}
+
+#gytra-likeBtn {
+    position: relative;
+    bottom: 103px;
+    left: 110px
+}
+
+#mortoth-btn {
+    position: relative;
+    bottom: 35px;
+}
+
+#mortoth-likeBtn {
+    position: relative;
+    bottom: 53px;
+    left: 110px
+}
+
+
+/* ------ NPC NAME FORM ------ */
+.npc_name_form {
+    max-width: max-content;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-style: solid none solid none;
+}
+
+.npc_name_form form {
+    padding-top: 1rem;
+}
+
+.npc_name_form button {
+    margin-top: 1rem;
+}
+
+/* ------ Footer: DnD BEYOND SECTION ------ */
+.dndbeyond {
+    max-width: 280px;
+    min-height: 80px;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background-color: rgba(123, 136, 111, 1);
+    border-radius: 5px;
+}
+
+#dndbeyond_logo {
+    max-width: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0;
+}
+
+.dndbeyond p {
+    max-width: 70%;
+    text-align: justify;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* ------ Breakpoint: screens under 1280px ------ */
+
+@media (max-width:1280px) {
+    .container_navbar {
+        width: 100%;
+    }
+
+    .nav_menu {
+        gap: 20px;
+    
+    }
+    
+    .world_section {
+        flex-flow: column;
+    }
+
+    .lore_box, .map_box {
+        max-width: 100%;
+        margin: 3rem 3rem 0 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+}

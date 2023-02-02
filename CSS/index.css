@@ -1,0 +1,461 @@
+/* ------ importing fonts to be used on the website ------*/
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:ital@0;1&display=swap');
+/* ------ End of fonts------ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+ /* ------ BODY ------ */
+body {
+    position: relative;
+    margin-top: 100px;
+    background-color: rgba(255, 252, 242, 0.5);
+}
+
+body a {
+    color: rgba(211, 196, 227, 1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body a:hover {
+    text-shadow: 0 0 5px 0;
+}
+
+p {
+    font-size: 1rem;
+}
+/* ------ HEADER: navigation bar ------ */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(123, 136, 111, 1);
+    z-index: 1;
+    box-shadow: 0 0 10px 0 rgba(40, 39, 41, 0.7);
+} 
+
+.container_navbar {
+    float: none;
+    width: 1280px;
+    margin: auto;
+}
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.campaign_name {
+    font-size: 2rem;
+    font-family: 'Quintessential', cursive;
+}
+
+.nav_link {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ------ MAIN ------*/
+main {
+    max-width: 1280px;
+    margin: auto;
+    padding: 1.8vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.save-btn, .submit-btn, .likeBtn, #contact-form #submit {
+    width: 100px;
+    background-color: rgba(123, 136, 111, 1);
+    color: rgba(40, 39, 41, 1);
+    border: 1px solid rgba(40, 39, 41, 0.7);
+    border-radius: 5px;
+    display: block;
+    font-variant: small-caps;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.save-btn:hover, .submit-btn:hover, .likeBtn:hover, #contact-form #submit:hover {
+    background: rgba(40, 39, 41, 0.7);
+    box-shadow:0px 2px 10px 2px rgba(40, 39, 41, 0.3);
+    clear: both;
+}
+
+/* ------ TITLE ------*/
+.title_block {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#home_title {
+    font-family: 'Quintessential', cursive;
+    font-size: 3.5rem;
+    color: rgba(33, 1, 36, 1);
+}
+
+h2 {
+    color: rgba(88, 80, 74, 1);
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 90%;
+}
+
+/* ------ ABOUT SECTION ------*/
+.about-me-and-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background-color: rgba(88, 80, 74, 0.9);
+    border-radius: 5px;
+}
+
+.about_me {
+    max-width: 70%;
+    text-align: justify;
+    color: rgba(255, 252, 242, 1);
+}
+
+.about_me p{
+    padding-bottom: 1rem;
+}
+
+#portrait {
+    max-width: 150px;
+    min-width: 100px;
+    filter: grayscale(100%);
+    /* keeping image ratio, reference: https://www.webtips.dev/webtips/css/keep-aspect-ratio-of-images-in-css*/
+    object-fit: contain;        
+    object-position: 50% 50%;
+}
+
+#portrait:hover{
+    filter: none;
+}
+
+#about-me-button{
+    position: relative;
+    top: -1.5rem;
+    left: 2rem;
+}
+
+#about-me-likeBtn {
+    position: relative;
+    left: 140px;
+    bottom: 41px;
+}
+
+.contact-form-block {
+    background-color: aquamarine;
+    margin: 2rem 2rem 4rem auto;
+    padding: 1rem;
+    border: 3px solid rgba(88, 80, 74, 1);
+    background-color: rgba(88, 80, 74, .1);
+    border-radius: 5px;
+}
+
+#contact-form label {
+font-variant: small-caps;
+}
+
+/* ------ WHAT IS DnD SECTION ------ */
+.dnd_section {
+    margin: 5rem 2rem 5rem 2rem;
+    padding: 2rem 1rem 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    border-style: solid none solid none;
+    border-width: 10px;
+    border-color: rgba(123, 136, 111, 1);
+    border-radius: 5px;
+}
+
+#video_dnd {
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    border: 0;
+}
+
+.dnd_explained {
+    margin: auto;
+    min-height: 350px;
+}
+
+.dnd_explained p {
+    padding-bottom: 1rem;
+    text-align: justify;
+
+}
+
+#what-is-dd-button {
+    position: relative;
+    top: -4.5rem;
+    left: 2rem;
+}
+
+#what-is-dd-likeBtn {
+    position: relative;
+    bottom: 89px;
+    left: 140px;
+}
+
+/* ------ QUOTE ------ */
+
+.quote {
+    display: block;
+    max-width: max-content;
+    margin: auto;
+    padding: 1.2rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(40, 39, 41, 0.7);
+    clear: both;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.quote p {
+    text-align: right;
+}
+
+#quote-btn {
+    margin: 5px auto;
+    position: relative;
+    left: -55px;
+}
+
+#quote-likeBtn {
+    margin: auto;
+    position: relative;
+    bottom: 22px;
+    left: 55px;
+}
+
+/* ------ THE PARTY SECTION ------ */
+
+.party_and_map {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin: 5rem 2rem 5rem 2rem;
+}
+
+.party_section {
+    max-width: 620px;
+    padding: 1rem;
+    background-color: rgba(211, 196, 227, 0.5);
+    border-radius: 5px;
+}
+
+.the_party {
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+.party_pics {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+.player {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.player p {
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+.party_img {
+    max-width: 160px;
+    border-radius: 50px;
+    filter: grayscale(100%);
+}
+
+.party_img:hover {
+    filter: none;
+    box-shadow: 0 0 5px 0;
+}
+
+#party-likeBtn {
+    position: relative;
+    bottom: 17px;
+    left: 110px;
+}
+
+
+/* ------ MAP SECTION ------*/
+.map_section {
+    max-width: 620px;
+    padding: 1rem;
+    background-color: rgba(88, 80, 74, 0.9);
+    border-radius: 5px;
+}
+
+.map_section p {
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+#map {
+    max-width: 600px;
+    object-fit: contain;        
+    object-position: 50% 50%;
+    filter: grayscale(100%);
+}
+
+#map:hover {
+    filter:none;
+}
+
+#map-likeBtn {
+    position: relative;
+    bottom: 17px;
+    left: 110px;
+}
+
+
+/* ------ COMMENTS SECTION ------ */
+.comments-section {
+    margin: 2rem;
+}
+
+.comments-section h3 {
+    color: rgba(88, 80, 74, 0.9);
+}
+
+.leave-a-comment {
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.posted-comments {
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 9rem;
+    border-left: 1px solid black;
+}
+
+#comments-container {
+    max-width: 500px;
+}
+
+#comments-container p {
+    margin-bottom: 1rem;
+}
+
+/* ------ Footer: DnD BEYOND SECTION ------ */
+.dndbeyond {
+    max-width: 280px;
+    min-height: 80px;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background-color: rgba(123, 136, 111, 1);
+    border-radius: 5px;
+}
+
+#dndbeyond_logo {
+    max-width: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0;
+}
+
+.dndbeyond p {
+    max-width: 70%;
+    text-align: justify;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ------ Breakpoint: screens under 1280px ------ */
+
+@media (max-width:1280px) {
+    .container_navbar {
+        width: 100%;
+    }
+
+    .nav_menu {
+        gap: 20px;
+    
+    }
+
+    .map_section {
+        min-width: 40%;
+    }
+
+    #map {
+        max-width: 100%;
+    }
+
+    .party_img {
+        max-width: 100px;
+        border-radius: 25px;
+    }
+
+    .dnd_section {
+        flex-flow: column;
+    }
+
+    #video_dnd {
+        margin-bottom: 2rem;
+    }
+
+}
