@@ -457,5 +457,49 @@ form label {
     #video_dnd {
         margin-bottom: 2rem;
     }
+}
 
+/* ------ Breakpoint: Mobile devices ------ */
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .navbar {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about {
+        display: grid;
+        max-height: fit-content;
+        margin: 1rem;
+        gap: 1%;
+    }
+
+    .about_me {
+        max-width: 100%;
+    }
+
+    #portrait {
+        margin: 0 auto;
+    }
+
+    .dnd_section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .quote {
+        margin: 1rem;
+    }
+
+    .party_and_map {
+        margin: 1rem;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .map_section {
+        max-width: 100%;
+    }
 }
